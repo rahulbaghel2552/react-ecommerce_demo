@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ProductsContext } from "../Global/ProductsContext";
 import { CartContext } from "../Global/CartContext";
 import Banner from "./Banner";
+
 const Products = () => {
   const { products } = useContext(ProductsContext);
   const { dispatch } = useContext(CartContext);

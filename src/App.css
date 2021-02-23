@@ -162,15 +162,16 @@ nav {
   font-size: 16px;
   border-radius: 10px;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   background: var(--mainColor);
   color: var(--whiteColor);
+  font-weight: 700;
 }
 
 .product_btn:hover {
-  background: var(--whiteColor);
+  background: transparent;
   color: var(--mainColor);
-  border-color: var(--whiteColor);
+  border: 2px solid var(--mainColor);
 }
 .hot,
 .new {
@@ -233,6 +234,17 @@ nav {
   width: 80px;
   border-radius: 5px;
   box-shadow: 1px 1px 11px rgb(0 0 0 / 30%);
+}
+.incr_decr_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart_product_price,
+.incr_decr_btn,
+.product_total_price {
+  width: 20%;
+  text-align: center;
 }
 .inc,
 .dec,

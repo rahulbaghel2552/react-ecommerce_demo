@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../Global/CartContext";
 import StripeCheckout from "react-stripe-checkout";
+
 const Cart = () => {
   const { shopingCart, totalprice, qty, dispatch } = useContext(CartContext);
   const handleToken = (token) => {

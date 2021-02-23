@@ -1,5 +1,8 @@
+
 const CartReducer = (state, action) => {
   const { shopingCart, totalprice, qty } = state;
+  
+
 
   let product, index, updatedPrice, updatedQty;
 
